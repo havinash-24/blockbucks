@@ -1,0 +1,111 @@
+
+body {
+  font-family: Arial, sans-serif,color:red,font-size:50;
+}
+
+h1 {
+  color: navy;
+  text-align:center;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+li strong {
+  display: inline-block;
+  width: 150px;
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  background-color: yellow;
+}
+:root {
+  --color-highlight: yellow;
+  --font-size-section-title: 24px;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.section-title {
+  font-size: var(--font-size-section-title);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.section-title:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.highlight {
+  background-color: var(--color-highlight);
+}
+
+.section-button {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.section:hover .section-button {
+  display: block;
+}
+
+.section-button:focus {
+  outline: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
